@@ -26,6 +26,8 @@ class MapPage extends StatefulWidget {
 
 class _MapPageState extends State<MapPage> {
   MapController controller = MapController(
+    //LatLng(23.744287065983727, 90.3841376276092)
+    //initPosition: GeoPoint(latitude: 23.7442, longitude: 90.3841),
     initPosition: GeoPoint(latitude: 47.4358055, longitude: 8.4737324),
     areaLimit: BoundingBox(
       east: 10.4922941,
@@ -33,11 +35,13 @@ class _MapPageState extends State<MapPage> {
       south: 45.817995,
       west: 5.9559113,
     ),
+
+
   );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Open Street Map'),backgroundColor: Colors.blue,),
+      appBar: AppBar(title: const Text('Open Street Map')),
       body: OSMFlutter(
           controller: controller,
           osmOption: OSMOption(
