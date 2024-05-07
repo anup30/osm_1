@@ -15,7 +15,7 @@ class _Screen2State extends State<Screen2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('flutter_map, latlong2'),backgroundColor: Colors.green,),
+      appBar: AppBar(title: const Text('flutter_map, latlong2'),backgroundColor: Colors.green[300],),
       body: content(),
     );
   }
@@ -29,13 +29,13 @@ class _Screen2State extends State<Screen2> {
           InteractionOptions(flags: ~InteractiveFlag.doubleTapZoom),
       ),
       children: [
-        openStreetMapTileLater,
+        openStreetMapTileLayer,
       ],
     );
   }
 }
 
-TileLayer get openStreetMapTileLater => TileLayer(
+TileLayer get openStreetMapTileLayer => TileLayer(
   urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   userAgentPackageName: 'dev.fleaflet.flutter_map.example',
 );
