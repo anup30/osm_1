@@ -1,5 +1,6 @@
 // https://www.youtube.com/watch?v=ZnZM8ot5lcc&list=PLJh8Hi_cW8DYP0LkOMzGA_lxRS2rYUi3k&index=5&ab_channel=AIwithFlutter // parts remaining
 // packages: flutter_map, latlong2
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
@@ -30,6 +31,39 @@ class _Screen2State extends State<Screen2> {
       ),
       children: [
         openStreetMapTileLayer,
+        MarkerLayer(
+          markers: [
+            const Marker(
+              point: LatLng(23.8048, 90.4158),
+              width: 60,
+              height: 60,
+              alignment: Alignment.centerLeft,
+              child: Icon(
+                Icons.location_pin,
+                size: 50,
+                color: Colors.blue,
+              ),
+            ),
+            Marker(
+              point: const LatLng(23.8021, 90.4132),
+              width: 60,
+              height: 60,
+              alignment: Alignment.centerLeft,
+              child: GestureDetector(
+                onTap: (){
+                  // task, eg navigate to another page
+                  //print(""); // this LatLng ?
+                },
+                child: const Icon(
+                  Icons.location_pin,
+                  size: 50,
+                  color: Colors.red,
+                ),
+              ),
+            ),
+          ],
+
+        ),
       ],
     );
   }
