@@ -15,15 +15,15 @@ class Screen1a extends StatefulWidget {
 class _Screen1aState extends State<Screen1a> {
   final MapController _mapController = MapController(
     //initMapWithUserPosition: true,
-    //initPosition: GeoPoint(latitude: 23.7442, longitude: 90.3841),
+    initPosition: GeoPoint(latitude: 23.8041, longitude: 90.4152), // not being starting position
     //google, dhaka: 23.8041° N, 90.4152° E
-    initPosition: GeoPoint(latitude: 47.4358055, longitude: 8.4737324), // --------> ?
-    areaLimit: BoundingBox(
-      east: 10.4922941,
-      north: 47.8084648,
-      south: 45.817995,
-      west: 5.9559113,
-    ),
+    //initPosition: GeoPoint(latitude: 47.4358055, longitude: 8.4737324), // --------> ?
+    // areaLimit: BoundingBox(
+    //   east: 10.4922941,
+    //   north: 47.8084648,
+    //   south: 45.817995,
+    //   west: 5.9559113,
+    // ),
   );
 
   @override
