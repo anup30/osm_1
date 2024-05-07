@@ -8,14 +8,14 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:open_route_service/open_route_service.dart';
 
-class Home3Screen extends StatefulWidget {
-  const Home3Screen({super.key});
+class Screen3 extends StatefulWidget {
+  const Screen3({super.key});
 
   @override
-  State<Home3Screen> createState() => _Home3ScreenState();
+  State<Screen3> createState() => _Screen3State();
 }
 
-class _Home3ScreenState extends State<Home3Screen> {
+class _Screen3State extends State<Screen3> {
   late LatLng myPoint;
   bool isLoading = false;
 

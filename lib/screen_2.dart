@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
-class Home2Screen extends StatefulWidget {
-  const Home2Screen({super.key});
+class Screen2 extends StatefulWidget {
+  const Screen2({super.key});
 
   @override
-  State<Home2Screen> createState() => _Home2ScreenState();
+  State<Screen2> createState() => _Screen2State();
 }
 
-class _Home2ScreenState extends State<Home2Screen> {
+class _Screen2State extends State<Screen2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
